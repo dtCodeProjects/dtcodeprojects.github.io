@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GameLoop Devlog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+  body {
+    margin: 0;
+    font-family: Consolas, monospace;
+    background: #0a0f1c;
+    color: #d9e7ff;
+    padding: 2rem;
+  }
+
+  .wrap {
+    max-width: 800px;
+    margin: auto;
+    background: #11182b;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #1f2a44;
+    box-shadow: 0 0 20px rgba(0,255,200,0.08);
+  }
+
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #4ef2c5;
+    margin-top: 0;
+  }
+
+  .entry {
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+    border-left: 3px solid #4ef2c5;
+    background: #0d1424;
+    border-radius: 6px;
+  }
+
+  .entry h2 {
+    margin: 0 0 .3rem;
+    font-size: 1rem;
+    color: #7af7ff;
+  }
+
+  .meta {
+    font-size: .8rem;
+    opacity: .7;
+    margin-bottom: .6rem;
+  }
+
+  .tags span {
+    display: inline-block;
+    padding: .15rem .5rem;
+    margin-right: .3rem;
+    font-size: .7rem;
+    border-radius: 4px;
+    background: #1a233a;
+    color: #4ef2c5;
+    border: 1px solid #2a3555;
+  }
+
+  pre {
+    background: #050b18;
+    padding: .2rem;
+    border-radius: 6px;
+    color: #7af7ff;
+    overflow-x: auto;
+    border: 1px solid #1f2a44;
+  }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <h1>GameLoop Devlog</h1>
+  <p>GameLoop is a lightweight framework built on top of SFML3 to assist in the creation of interactive 2D programs.</p>
+  
+  <!-- TEMPLATE -->
+  <div class="entry">
+    <h2>Intro</h2>
+    <div class="meta">01‑06‑26</div>
+    <p></p>Welcome to the DevLog for GameLoop, a lightweight framework designed to simplify the creation of 2D games using SFML3.</P>
+    
+    <p>GameLoop is currently in the concept and prototyping stage. A few foundational classes are in place, but the framework 
+    is still evolving. Over the coming months and likely years of steady C++ development, the goal is to build a clean, intuitive, 
+    and flexible framework that streamlines the 2D game development process.</p>
+    
+    <p>This DevLog will track progress, design decisions, experiments, and lessons learned along the way.</p>
+    
+    <p>The example code below highlights the structure of a GameLoop application.</p>
+    
+  <pre>
+  #include "app.h"
+
+  App::App() : GameLoop()
+  {
+  }
+
+  void App::Update(float delta)
+  {
+  }
+
+  void App::Render()
+  {
+  }
+
+  int main()
+  { 
+    App MyApplication;
+  
+    MyApplication.Config("MyApplication.cfg");
+    MyApplication.Run();
+  
+    return 0;
+  }
+  </pre>
+  
+  <p>I decided to begin this project to learn SFML3 and improve my current limited C++ knowledge (currently novice level) and 
+  create a simple 2D game along the way.</p>
+  
+  <p>Time to get started, I've got a long journey ahead.</p>
+  
+  </div>
+
+</div>
+</body>
+</html>
